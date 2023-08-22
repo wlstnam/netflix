@@ -1,0 +1,53 @@
+.video-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    
+}
+
+.item{
+    padding-bottom: 24px;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+.item:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+
+.container{
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.division{
+    font-size: 25px;
+}
+
+@media (max-width: 750px) {
+    .item {
+        width: 47%;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+    .item {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .item {
+        width: 15%;
+    }
+}
